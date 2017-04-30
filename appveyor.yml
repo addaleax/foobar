@@ -11,7 +11,7 @@ install:
   - ps: Install-Product node $env:nodejs_version $env:platform
   - node -p process.arch
   - node -p process.version
-  - wget node-v8.0.0-nightly20170430aa3eab00da-win-x64.zip
+  - curl -o node-v8.0.0-nightly20170430aa3eab00da-win-x64.zip https://nodejs.org/download/nightly/v8.0.0-nightly20170430aa3eab00da/node-v8.0.0-nightly20170430aa3eab00da-win-x64.zip
   - 7z x node-v8.0.0-nightly20170430aa3eab00da-win-x64.zip
 
 test_script:
