@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "7"
+script:
+  - node test.js
+os:
+  - linux
+  - osx
+sudo: false
